@@ -4,13 +4,16 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center flex-col gap-6 text-white items-center h-[80vh]">
-        <div className="flex flex-row justify-center items-center gap-5">
+        <div className="flex flex-row min-[320px]:flex-col sm:flex-row  justify-center items-center gap-0 sm:gap-0 md:gap-4 lg:gap-5 mx-5">
 
-          <p className="font-bold text-5xl">Buy me a Momo!</p> <span
+          <p className="font-bold text-5xl flex-wrap">Buy me a Momo!</p> 
+         
 
-          > <img src="icon.gif" width={54} alt="" /></span>
+           <img 
+           className="m-5 scale-150 sm:scale-100"
+           src="icon.gif" width={54} alt="" />
         </div>
-        <p>A Crowdfunding platform for creators. Get funded by your fans and followers. Start Now!</p>
+        <p className="mx-5 my-4">A Crowdfunding platform for creators. Get funded by your fans and followers. Start Now!</p>
         <div className="flex flex-row justify-around gap-1">
 
           <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
@@ -26,7 +29,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="mt-0 z-10">
+        <div className="mt-0 z-10 mx-5">
           <img src="/momoPhoto.png" width={430} alt="" />
         </div>
       </div>
@@ -96,7 +99,7 @@ export default function Home() {
 
 
 
-      <div className=" text-white container h-[100vh] mt-20 mx-auto">
+      <div className=" text-white container mt-20 mx-auto pb-10">
         <h2
           className=" text-center font-bold mt-14 text-4xl"
         >Learn More About us!</h2>
